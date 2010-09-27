@@ -5,12 +5,7 @@ Brought to you by PHP KingDom (www.phpkd.net)
 
 PHPKD - Subscription Certain Payment APIs -- Installation Procedure:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     1. Upload required files to their appropriate places:
-	includes
-	     paymentapi
-	          class_paypal2.php
-
-     2. Do the following small manual edit(s), open the file "includes/subscriptions.php" and:
+     1. Do the following small manual edit(s), open the file "includes/subscriptions.php" and:
 	     Search for:
 -------------------------------------------------
 =================================================
@@ -65,9 +60,9 @@ PHPKD - Subscription Certain Payment APIs -- Installation Procedure:
 	     Save the modified file "includes/subscriptions.php" and upload it to it's place again (ALLOW OVERWRITE).
 
 
-     3. Import the product's XML file "product-phpkd_vbscp.xml" from AdminCP.
+     2. Import the product's XML file "product-phpkd_vbscp.xml" from AdminCP.
 
-     4. You're Done :).
+     3. You're Done :).
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

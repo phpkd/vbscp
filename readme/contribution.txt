@@ -41,23 +41,13 @@
 	[/LIST]
      [*][U][B]Specific Features:-[/B][/U]
 	[LIST]
-	     [*]######################### Full control over which payment methods are used for each paid subscription. A multi selection menu with all 
+	     [*]Full control over which payment methods are used for each paid subscription. A multi selection menu with all available paymanet APIs to select from.
 	[/LIST]
 [/LIST]
 
 
 [U][B]Installation Procedure:[/B][/U]
 [LIST=1]
-     [*]Upload required files to their appropriate places:
-	[LIST]
-	     [*]includes
-		[LIST]
-		     [*]paymentapi
-			[LIST]
-			      [*]class_paypal2.php
-			[/LIST]
-		[/LIST]
-	[/LIST]
      [*]Do the following small manual edit(s), open the file "includes/subscriptions.php" and:
 	     [U]Search for:[/U]
 			[CODE]	print_input_row($vbphrase['display_order'], 'sub[displayorder]', $sub['displayorder'], true, 5);[/CODE]
@@ -109,7 +99,7 @@
 [U][B]Controls:[/B][/U]
 [LIST]
      [*][B][U]Settings:[/U][/B]
-	vBulletin AdminCP » Paid Subscriptions » Payment API Manager » [B]Paypal #2[/B]
+	vBulletin AdminCP » Paid Subscriptions » Subscription Manager » Any Product » Edit » [B]Payment API Manager[/B]
 [/LIST]
 
 

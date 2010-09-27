@@ -46,17 +46,12 @@ Features:
 	* Does NOT break any default vBulletin functionality -Fully vBulletin Compatible-.
 
     |- Specific Features:-
-	* Additional Paypal Payment API completely standalone with it's own settings & isolated management.
+	* Full control over which payment methods are used for each paid subscription. A multi selection menu with all available paymanet APIs to select from.
 
 
 Installation Procedure:
 ~~~~~~~~~~~~~~~~~~~~~~~~
-     1. Upload required files to their appropriate places:
-	includes
-	     paymentapi
-	          class_paypal2.php
-
-     2. Do the following small manual edit(s), open the file "includes/subscriptions.php" and:
+     1. Do the following small manual edit(s), open the file "includes/subscriptions.php" and:
 	     Search for:
 -------------------------------------------------
 =================================================
@@ -111,9 +106,9 @@ Installation Procedure:
 	     Save the modified file "includes/subscriptions.php" and upload it to it's place again (ALLOW OVERWRITE).
 
 
-     3. Import the product's XML file "product-phpkd_vbscp.xml" from AdminCP.
+     2. Import the product's XML file "product-phpkd_vbscp.xml" from AdminCP.
 
-     4. You're Done :).
+     3. You're Done :).
 
 
 Upgrade Procedure:
@@ -124,7 +119,7 @@ Upgrade Procedure:
 Controls:
 ~~~~~~~~~~
      * Settings:
-	vBulletin AdminCP » Paid Subscriptions » Payment API Manager » Paypal #2
+	vBulletin AdminCP » Paid Subscriptions » Subscription Manager » Any Product » Edit » Payment API Manager
 
 
 License:
