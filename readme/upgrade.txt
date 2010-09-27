@@ -75,4 +75,4 @@ PHPKD - Subscription Certain Payment APIs -- Upgrade Procedure:
 Brought to you by PHP KingDom (www.phpkd.net)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$Version: 4.0.100 $ - $Id: upgrade.txt 3 2010-09-26 11:07:36Z PHPKD $
+$Version: 4.0.100 $ - $Id$

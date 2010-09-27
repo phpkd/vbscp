@@ -5,9 +5,9 @@
 	<description><![CDATA[This product allows admin staff to specify certain payment APIs for each paid subscription.]]></description>
 	<version><![CDATA[4.0.100]]></version>
 	<vendor><![CDATA[$Vendor: PHP KingDom $]]></vendor>
-	<author><![CDATA[$Author: PHPKD $]]></author>
-	<revision><![CDATA[$Revision: 3 $]]></revision>
-	<released><![CDATA[$Date: 2010-09-26 14:07:36 +0300 (Sun, 26 Sep 2010) $]]></released>
+	<author><![CDATA[$Author$]]></author>
+	<revision><![CDATA[$Revision$]]></revision>
+	<released><![CDATA[$Date$]]></released>
 	<url><![CDATA[http://tools.phpkd.net/en/producthelp/url/vbscp/]]></url>
 	<versioncheckurl><![CDATA[http://tools.phpkd.net/en/producthelp/version/vbscp/]]></versioncheckurl>
 	<extradetails><![CDATA[http://tools.phpkd.net/en/producthelp/info/vbscp/]]></extradetails>

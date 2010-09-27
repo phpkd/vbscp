@@ -74,4 +74,4 @@ PHPKD - Subscription Certain Payment APIs -- Installation Procedure:
 Brought to you by PHP KingDom (www.phpkd.net)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$Version: 4.0.100 $ - $Id: install.txt 3 2010-09-26 11:07:36Z PHPKD $
+$Version: 4.0.100 $ - $Id$
