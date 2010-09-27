@@ -180,7 +180,7 @@ if (is_array($phpkd_vbscp) AND !empty($phpkd_vbscp) AND !in_array($method['class
 	<phrases>
 		<phrasetype name="Subscription Tools" fieldname="subscription">
 			<phrase name="phpkd_vbscp" date="1285213265" username="PHPKD" version="4.0.100"><![CDATA[Payment API<dfn>Leave blank to allow all.<br />Hold 'ctrl' key while selecting for multiple selection/deselection.</dfn>]]></phrase>
-			<phrase name="phpkd_vbscp_none" date="1285588033" username="PHPKD" version="4.0.100"><![CDATA[None]]></phrase>
+			<phrase name="phpkd_vbscp_all" date="1285588033" username="PHPKD" version="4.0.100"><![CDATA[All]]></phrase>
 		</phrasetype>
 	</phrases>
 	<options>

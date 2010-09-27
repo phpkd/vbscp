@@ -33,7 +33,7 @@ PHPKD - Subscription Certain Payment APIs -- Upgrade Procedure:
 		$phpkd_vbscp[$phpkd_vbscp_api['classname']] = $phpkd_vbscp_api['title'];
 	}
 	$phpkd_vbscp_paymentapi = unserialize($sub['paymentapi']);
-	print_select_row($vbphrase['phpkd_vbscp'], 'sub[paymentapi][]',  array(-1 => $vbphrase['phpkd_vbscp_none']) + $phpkd_vbscp, count($phpkd_vbscp_paymentapi) > 0 ? $phpkd_vbscp_paymentapi : -1, false, 5, true);
+	print_select_row($vbphrase['phpkd_vbscp'], 'sub[paymentapi][]',  array(-1 => $vbphrase['phpkd_vbscp_all']) + $phpkd_vbscp, count($phpkd_vbscp_paymentapi) > 0 ? $phpkd_vbscp_paymentapi : -1, false, 5, true);
 =================================================
 -------------------------------------------------
 
