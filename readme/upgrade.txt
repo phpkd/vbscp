@@ -1,0 +1,78 @@
+﻿~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Brought to you by PHP KingDom (www.phpkd.net)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+PHPKD - Subscription Certain Payment APIs -- Upgrade Procedure:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     1. Upload required files to their appropriate places (ALLOW OVERWRITE):
+     1. Upload required files to their appropriate places:
+	includes
+	     paymentapi
+	          class_paypal2.php
+
+     2. Do the following small manual edit(s) -IF NOT ALREADY DONE-, open the file "includes/subscriptions.php" and:
+	     Search for:
+-------------------------------------------------
+=================================================
+	print_input_row($vbphrase['display_order'], 'sub[displayorder]', $sub['displayorder'], true, 5);
+=================================================
+-------------------------------------------------
+
+	     Add under it directly the following code:
+-------------------------------------------------
+=================================================
+	// PHPKD - Subscription Certain Payment APIs
+	print_table_header($vbphrase['payment_api_manager']);
+	$phpkd_vbscp = array();
+	$phpkd_vbscp_apis = $db->query_read("
+		SELECT * FROM " . TABLE_PREFIX . "paymentapi
+	");
+	while ($phpkd_vbscp_api = $db->fetch_array($phpkd_vbscp_apis))
+	{
+		$phpkd_vbscp[$phpkd_vbscp_api['classname']] = $phpkd_vbscp_api['title'];
+	}
+	$phpkd_vbscp_paymentapi = unserialize($sub['paymentapi']);
+	print_select_row($vbphrase['phpkd_vbscp'], 'sub[paymentapi][]',  array(-1 => $vbphrase['phpkd_vbscp_none']) + $phpkd_vbscp, count($phpkd_vbscp_paymentapi) > 0 ? $phpkd_vbscp_paymentapi : -1, false, 5, true);
+=================================================
+-------------------------------------------------
+
+
+	     Search for:
+-------------------------------------------------
+=================================================
+	$sub['displayorder'] = intval($sub['displayorder']);
+=================================================
+-------------------------------------------------
+
+	     Add under it directly the following code:
+-------------------------------------------------
+=================================================
+	// PHPKD - Subscription Certain Payment APIs
+	if (count($sub['paymentapi']) > 1 AND $sub['paymentapi'][0] == -1)
+	{
+		unset($sub['paymentapi'][0]);
+	}
+
+	if (!is_array($sub['paymentapi']))
+	{
+		 $sub['paymentapi'] = array();
+	}
+
+	$sub['paymentapi'] = serialize($sub['paymentapi']);
+=================================================
+-------------------------------------------------
+
+	     Save the modified file "includes/subscriptions.php" and upload it to it's place again (ALLOW OVERWRITE).
+
+
+     3. Import the product's XML file "product-phpkd_vbscp.xml" from AdminCP (ALLOW OVERWRITE).
+
+     4. You're Done :).
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Brought to you by PHP KingDom (www.phpkd.net)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$Version: 4.0.100 $ - $Id: upgrade.txt 3 2010-09-26 11:07:36Z PHPKD $
