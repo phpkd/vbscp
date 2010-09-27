@@ -197,7 +197,7 @@ This is a human-readable summary of the Legal Code (the full license).
      [*][COLOR="dimgray"]New Cronjobs:[/COLOR] 0
      --------------------------------
      [*][COLOR="dimgray"]Installation Level:[/COLOR] Easy
-     [*][COLOR="dimgray"]Installation Time:[/COLOR] ~15 seconds
+     [*][COLOR="dimgray"]Installation Time:[/COLOR] ~13 seconds
 [/LIST]
 
 
