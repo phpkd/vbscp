@@ -10,7 +10,7 @@ Name:
 
 Version:
 ~~~~~~~~~
-     * 4.0.100
+     * 4.0.101
 
 
 Description:
@@ -182,6 +182,9 @@ History:
 	+ Improved the product in general.
 	+ Fully compatible with vBulletin 4.0.x.
 	+ Reduced manual edits, now required edits are only in one file.
+     * v4.0.101 28/09/2010 10:00 AM UTC: Maintenance release (public)
+	+ Fixed minor bug in installation code.
+
 
 Screen Shots:
 ~~~~~~~~~~~~~~
@@ -233,4 +236,4 @@ Recent Products:
 Brought to you by PHP KingDom (www.phpkd.net)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$Version: 4.0.100 $ - $Id$
+$Version: 4.0.101 $ - $Id$

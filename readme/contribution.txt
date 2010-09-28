@@ -6,7 +6,7 @@
 
 
 [B]Name:[/B] PHPKD - Subscription Certain Payment APIs
-[B]Version:[/B] 4.0.100
+[B]Version:[/B] 4.0.101
 
 [B]Description:[/B] This product allows admin staff to specify certain payment APIs for each paid subscription.
 
@@ -168,6 +168,10 @@ This is a human-readable summary of the Legal Code (the full license).
      [*]Improved the product in general.
      [*]Fully compatible with vBulletin 4.0.x.
      [*]Reduced manual edits, now required edits are only in one file.
+     [/LIST]
+     [*][B]v4.0.101[/B] 28/09/2010 10:00 AM UTC: Maintenance release (public)
+     [LIST=1]
+     [*]Fixed minor bug in installation code.
      [/LIST]
 [/LIST]
 
